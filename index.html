@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="relative min-h-screen">
+      <!-- Background -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('asset/banner.jpg')"
+      ></div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- Navbar -->
+      <nav class="relative container mx-auto flex items-center py-3 z-10">
+        <div class="flex items-center">
+          <img class="w-9 rounded-full" src="asset/logo.jpg" alt="Logo" />
+          <h1 class="font-bold mx-3 text-yellow-500">Coffee Shop</h1>
+        </div>
+        <div class="ml-auto">
+          <ol class="flex gap-3 text-yellow-500 items-center">
+            <li>
+              <a class="hover:underline underline-offset-2 font-bold" href=""
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="menu.html"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="index.html#galery"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="index.html#kontak"
+                >Kontak</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <img
+                class="w-14 transition-transform duration-300 transform hover:scale-110"
+                src="asset/login.png"
+                alt=""
+              />
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <div
+        class="relative flex flex-col items-center justify-center min-h-screen z-10"
+      >
+        <img
+          class="w-1/4 transition-transform duration-300 transform hover:scale-125"
+          src="asset/cangkir.png"
+          alt="Cangkir Kopi"
+        />
+        <h2 class="font-bold text-5xl text-center text-white">Coffee Shop</h2>
+      </div>
+    </div>
+
+    <div class="container mx-auto py-5 grid grid-cols-3 px-4 my-24">
+      <div class="p-3">
+        <h2 class="font-bold mb-3 text-3xl">Jam Buka</h2>
+        <div
+          class="bg-stone-50 drop-shadow-md p-4 transition-transform duration-300 transform hover:scale-110 text-xl text-gray-600"
+        >
+          <p>Senin-Minggu</p>
+          <p>Jam: 08:00-22:00</p>
+          <p class="mt-4">"Come and Savor the Moment"</p>
+        </div>
+      </div>
+      <!-- Kata Pengantar -->
+      <div class="col-span-2 text-justify p-3">
+        <h2 class="text-3xl font-bold mb-3">Drink | Eat | Chill</h2>
+        <p class="mb-3 text-xl text-gray-600">
+          Rasakan kehangatan sambutan saat Anda mengunjungi Coffee Shop.
+        </p>
+        <p class="text-xl text-gray-600">
+          Kami menyajikan kopi spesial, kue lezat, dan hidangan menggugah
+          selera. Baik Anda ingin menikmati secangkir kopi sebelum beraktivitas
+          atau merencanakan pertemuan santai dengan teman, kami siap menjadi
+          tempat favorit Anda.
+        </p>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 py-24">
+      <img class="w-full" src="asset/Date.png" alt="" />
+    </div>
+
+    <!-- Galery -->
+
+    <div class="container mx-auto px-4 py-24">
+      <h2 id="galery" class="text-3xl py-5">Galery</h2>
+      <div id="animation-carousel" class="relative w-full">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 md:h-96 overflow-hidden">
+          <div
+            class="carousel-item grid grid-cols-2 gap-2 block duration-700 ease-in-out"
+          >
+            <img
+              src="asset/galery/1.png"
+              class="w-full h-full object-cover"
+              alt="Gambar 1"
+            />
+            <img
+              src="asset/galery/2.png"
+              class="w-full h-full object-cover"
+              alt="Gambar 2"
+            />
+          </div>
+          <div
+            class="carousel-item grid grid-cols-2 gap-2 hidden duration-700 ease-in-out"
+          >
+            <img
+              src="asset/galery/3.png"
+              class="w-full h-full object-cover"
+              alt="Gambar 3"
+            />
+            <img
+              src="asset/galery/4.png"
+              class="w-full h-full object-cover"
+              alt="Gambar 4"
+            />
+          </div>
+          <div
+            class="carousel-item grid grid-cols-2 gap-2 hidden duration-700 ease-in-out"
+          >
+            <img
+              src="asset/galery/5.png"
+              class="w-full h-full object-cover"
+              alt="Gambar 5"
+            />
+            <img
+              src="asset/galery/1.png"
+              class="w-full h-full object-cover"
+              alt="Gambar 6"
+            />
+          </div>
+        </div>
+
+        <!-- Slider controls -->
+        <button
+          id="prev"
+          class="absolute top-1/2 left-4 transform -translate-y-1/2 z-30 px-4 py-2 bg-white/30 hover:bg-white/50 rounded-full"
+        >
+          &#10094;
+        </button>
+        <button
+          id="next"
+          class="absolute top-1/2 right-4 transform -translate-y-1/2 z-30 px-4 py-2 bg-white/30 hover:bg-white/50 rounded-full"
+        >
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <!-- Daftar Klien -->
+    <section class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-10">Ulasan Pelanggan</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="asset/foto/1.png"
+              alt="Foto User"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-lg font-semibold">Dimas Setiawan</h3>
+              <p class="text-gray-500 text-sm">@dimascoffee</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            "Cappuccino di sini luar biasa! Rasanya pas, tidak terlalu manis.
+            Tempatnya juga nyaman banget buat kerja."
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="asset/foto/2.png"
+              alt="Foto User"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-lg font-semibold">Nadia Rahma</h3>
+              <p class="text-gray-500 text-sm">@nadia_rahma</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            "Tempat ini cozy banget! Musiknya enak, makanan ringan juga enak.
+            Matcha Lattenya favoritku!"
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="asset/foto/3.png"
+              alt="Foto User"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-lg font-semibold">Rizky Pratama</h3>
+              <p class="text-gray-500 text-sm">@rizky.ptm</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            "Browniesnya lembut dan enak banget! Kopinya juga mantap.
+            Rekomendasi buat pecinta kopi asli."
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="asset/foto/4.png"
+              alt="Foto User"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-lg font-semibold">Siti Aisyah</h3>
+              <p class="text-gray-500 text-sm">@aisyah.siti</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            "Americano di sini beda dari yang lain, aromanya khas dan rasanya
+            smooth. Suka banget!"
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="asset/foto/5.png"
+              alt="Foto User"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-lg font-semibold">Budi Santoso</h3>
+              <p class="text-gray-500 text-sm">@budi.snt</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            "Salah satu coffee shop terbaik di kota ini. Tempat nyaman,
+            pelayanan ramah, dan kopi yang berkualitas!"
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="asset/foto/6.png"
+              alt="Foto User"
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div>
+              <h3 class="text-lg font-semibold">Andi Permana</h3>
+              <p class="text-gray-500 text-sm">@andi_permana</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            "Croissantnya super renyah dan buttery! Cocok banget buat teman
+            ngopi pagi hari."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mx-auto p-5 px-4 py-24">
+      <h2 id="kontak" class="text-2xl font-bold mb-4">Info Coffee Shop</h2>
+      <div class="grid grid-cols-2">
+        <div class="text-xl p-5 text-justify">
+          <h2 class="font-semibold mb-4">Kontak Kami</h2>
+          <ul class="text-lg space-y-2 text-gray-600">
+            <li>
+              Alamat : Jalan Gatot Subroto No. 31, Bojongbata, Kec. Pemalang,
+              Kabupaten Pemalang, Jawa Tengah 52319
+            </li>
+            <li>Email: info@CoffeeShop.com</li>
+            <li>Telepon: (+62) xxx-xxxx-xxxx</li>
+            <li>
+              Instagram:
+              <a href="#" class="hover:underline">@CoffeeShop_pemalang</a>
+            </li>
+            <li>
+              Facebook:
+              <a href="#" class="hover:underline">Coffee Shop Pemalang</a>
+            </li>
+          </ul>
+        </div>
+        <div class="overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.865191236309!2d109.38085178957634!3d-6.906719275371973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fdb33bf656baf%3A0x9d97605a0532c7cc!2sSMK%20Negeri%201%20Pemalang!5e0!3m2!1sid!2sid!4v1739425707077!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Grid 1: Tentang Kami -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">@Coffee Shop</h2>
+          <p class="text-sm">
+            Rasakan kehangatan sambutan saat Anda mengunjungi Coffee Shop.
+          </p>
+        </div>
+
+        <!-- Grid 2: Link Cepat -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Link Cepat</h2>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:underline">Beranda</a></li>
+            <li><a href="#" class="hover:underline">Produk</a></li>
+            <li><a href="#" class="hover:underline">Layanan</a></li>
+            <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+          </ul>
+        </div>
+
+        <!-- Grid 3: Kontak -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Kontak Kami</h2>
+          <ul class="text-sm space-y-2">
+            <li>Email: info@CoffeeShop.com</li>
+            <li>Telepon: (+62) xxx-xxxx-xxxx</li>
+            <li>
+              Instagram:
+              <a href="#" class="hover:underline">@CoffeeShop_pemalang</a>
+            </li>
+            <li>
+              Facebook:
+              <a href="#" class="hover:underline">Coffee Shop Pemalang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-sm mt-8 border-t border-gray-700 pt-4">
+        © 2025 pplg.smkn1pml. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      const slides = document.querySelectorAll(".carousel-item");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("block", i === index);
+          slide.classList.toggle("hidden", i !== index);
+        });
+      }
+
+      document.getElementById("prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      });
+
+      document.getElementById("next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      });
+
+      // Auto play
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }, 3000);
+    </script>
+  </body>
+</html>

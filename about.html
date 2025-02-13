@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <div class="relative">
+      <!-- Background -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('asset/banner.jpg')"
+      ></div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- Navbar -->
+      <nav class="relative container mx-auto flex items-center py-3 z-10">
+        <div class="flex items-center">
+          <img class="w-9 rounded-full" src="asset/logo.jpg" alt="Logo" />
+          <h1 class="font-bold mx-3 text-yellow-500">Coffee Shop</h1>
+        </div>
+        <div class="ml-auto">
+          <ol class="flex gap-3 text-yellow-500 items-center">
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="menu.html"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="index.html#galery"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="index.html#kontak"
+                >Kontak</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline underline-offset-2 font-bold"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <img
+                class="w-14 transition-transform duration-300 transform hover:scale-110"
+                src="asset/login.png"
+                alt=""
+              />
+            </li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <!-- About -->
+    <div class="mt-10 container mx-auto">
+      <div class="flex items-center grid-cols-3">
+        <!-- Kolom teks (2 bagian) -->
+        <div class="col-span-2 text-justify text-xl">
+          <div class="">
+            <h2 class="text-2xl font-bold">About</h2>
+            <h2 class="text-5xl font-bold my-3">Coofee Shop</h2>
+          </div>
+          <p class="mt-4 text-gray-600">
+            Coffee Shop adalah tempat yang sempurna untuk menikmati secangkir
+            kopi berkualitas tinggi dalam suasana yang nyaman dan hangat. Kami
+            menyediakan berbagai jenis kopi spesial dan makanan ringan yang
+            dibuat dengan bahan berkualitas terbaik.
+          </p>
+          <p class="mt-2 text-gray-600">
+            Dengan suasana yang nyaman, WiFi gratis, dan pelayanan terbaik,
+            Coffee Shop adalah tempat yang sempurna untuk bekerja, bersantai,
+            atau sekadar menikmati waktu bersama teman.
+          </p>
+        </div>
+
+        <!-- Kolom gambar (1 bagian) -->
+        <div class="h-full p-5">
+          <img
+            class="w-full h-full drop-shadow-lg object-cover"
+            src="asset/galery/5.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- visi misi -->
+    <div class="container mx-auto my-24">
+      <div class="my-10 text-center">
+        <h2 class="text-2xl font-bold">Visi Misi</h2>
+        <h2 class="text-5xl font-bold my-3">Coofee Shop</h2>
+      </div>
+      <div class="my-6">
+        <!-- Visi -->
+        <div class="p-6 my-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-700">Visi</h3>
+          <p class="mt-2 text-gray-600">
+            Menjadi coffee shop terbaik yang menyajikan pengalaman unik dan cita
+            rasa otentik bagi para pecinta kopi.
+          </p>
+        </div>
+
+        <!-- Misi -->
+        <div class="p-6 my-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-700">Misi</h3>
+          <ul class="mt-2 text-gray-600 text-left list-disc pl-6">
+            <li>Menggunakan biji kopi berkualitas tinggi dan fresh.</li>
+            <li>Menyediakan layanan pelanggan terbaik.</li>
+            <li>Menciptakan suasana nyaman dan menyenangkan.</li>
+            <li>Memberikan edukasi tentang kopi kepada pelanggan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Grid 1: Tentang Kami -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">@Coffee Shop</h2>
+          <p class="text-sm">
+            Rasakan kehangatan sambutan saat Anda mengunjungi Coffee Shop.
+          </p>
+        </div>
+
+        <!-- Grid 2: Link Cepat -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Link Cepat</h2>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:underline">Beranda</a></li>
+            <li><a href="#" class="hover:underline">Produk</a></li>
+            <li><a href="#" class="hover:underline">Layanan</a></li>
+            <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+          </ul>
+        </div>
+
+        <!-- Grid 3: Kontak -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Kontak Kami</h2>
+          <ul class="text-sm space-y-2">
+            <li>Email: info@CoffeeShop.com</li>
+            <li>Telepon: (+62) xxx-xxxx-xxxx</li>
+            <li>
+              Instagram:
+              <a href="#" class="hover:underline">@CoffeeShop_pemalang</a>
+            </li>
+            <li>
+              Facebook:
+              <a href="#" class="hover:underline">Coffee Shop Pemalang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-sm mt-8 border-t border-gray-700 pt-4">
+        © 2025 pplg.smkn1pml. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
